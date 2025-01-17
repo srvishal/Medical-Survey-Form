@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse enter and leave</title>
+</head>
+<body>
+    <input type="text" onkeyup="keyUp()" onkeydown="keyDown()" onkeypress="keyPress">
+    <img src="ford vs ferrari.jpg" height="320px" width="320px" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)">
+    <p>When your cursor move on to the image. The image size will be big otherwise it is in normal size</p>
+    <script>
+        function mouseEnter(x)
+        {
+            x.style.height="320px";
+            x.style.width="320px";
+        }
+        function mouseLeave(x)
+        {
+            x.style.height="640px";
+            x.style.width="640px";
+        }
+    </script>
+    
+</body>
+</html>

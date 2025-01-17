@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Survey Form</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        form {
+            background-color: #fff;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-control {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-control label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Medical Survey Form</h1>
+    <form id="medical-survey-form">
+        <div class="form-control">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-control">
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Enter your age" required>
+        </div>
+
+        <div class="form-control">
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label for="medical-history">Do you have any pre-existing medical conditions?</label>
+            <textarea id="medical-history" placeholder="Please specify" rows="4"></textarea>
+        </div>
+
+        <div class="form-control">
+            <label>Are you currently taking any medication?</label>
+            <label><input type="radio" name="medication" value="yes"> Yes</label>
+            <label><input type="radio" name="medication" value="no"> No</label>
+        </div>
+
+        <div class="form-control">
+            <label for="comments">Additional Comments</label>
+            <textarea id="comments" placeholder="Any additional comments or concerns" rows="4"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('medical-survey-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert('Form submitted successfully!');
+            // Here you fill to do the survey form
+        });
+    </script>
+</body>
+
+</html>

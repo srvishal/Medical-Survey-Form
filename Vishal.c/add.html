@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function oddeven(){
+    let number=5;   
+    if(number%2==0){
+        console.log("The number is Even");
+    }
+    else{
+        console.log("The number is Odd");
+    }
+}
+oddeven(5);
+function ischeck(number){
+    if(number<0){
+        console.log("Negative number");
+    }
+    else if(number>0){
+        console.log("Possitive number");
+    }
+    else{
+        console.log("The number is zero")
+    }
+}
+ischeck(5);
+function cmkm(centimeter){
+    centimeter=centimeter/100000;//Converting cm to km
+    return centimeter;
+}
+let kilometer=cmkm(100);
+console.log(`The converted value is:${kilometer}km`);
+
+
+function roadsignal(){
+    let rules="The road signals: RED - Stop, YELLOW - Prepare to go, GREEN - Go.";
+    return rules;
+}
+let rules=roadsignal();
+console.log(rules);
+    </script>
+    
+</body>
+</html>

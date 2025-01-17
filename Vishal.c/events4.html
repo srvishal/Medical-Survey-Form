@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>AN Example for keyDown() function</p>
+    <input type="text" id="myInput" onkeyup="keyUp()" onkeydown="keyDown()" onkeypress="keyPress(event)">
+    <script>
+        //change the text in uppercase
+        function keyUp()
+        {
+           let x=document.getElementById("myInput");
+           x.value=x.value.toUpperCase();
+        }
+        //both function represents pressing key
+        function keyDown()
+        {
+            document.getElementById("myInput").innerHTML="You pressed a key";
+        }
+        function keyPress(e)
+        {
+            document.getElementById("myInput").innerHTML="You pressed a key"+e.key;
+        }
+    </script>
+</body>
+</html>

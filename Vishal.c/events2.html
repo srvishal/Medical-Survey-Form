@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <p>use addEventListener() method to attach a "Context Menu"</p>
+        <div id="div01" style="border:5px solid black;padding : 10px;background-color: gray;">
+            <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">Right click in the box</p>
+            <p> context menu will show</p>
+        </div>
+        <br>
+        <div id="div02" style="visibility: hidden">
+            <p>cut</p>
+            <p>copy</p>
+            <p>paste</p>
+            <p>Rename</p>
+            <p>Open</p>
+            <p>select</p>
+        </div>
+        <script>
+            document.getElementById("div01").oncontextmenu=function(){myFunction()};
+            function mouseDown()
+            {
+                const div=document.getElementById("div02");
+                div.style.visibility="visible";
+            }
+            function mouseUp()
+            {
+                document.getElementById("myP").style.color="blue";
+            }
+    
+        </script>
+    </body>
+    </html>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+</body>
+</html>

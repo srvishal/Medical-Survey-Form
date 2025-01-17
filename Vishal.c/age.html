@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkage(){
+        let age=window.prompt("Enter the age:");
+        age=Number(age);
+        if(age>0&&age<5){
+            document.write("Child");
+        }
+        else if(age>5&&age<=20){
+            document.write("Youngsters");
+        }
+        else if(age>20)
+        {
+            document.write("Adult");
+        }
+        else
+        {
+            document.write("Please enter a valid age");
+        }
+    }
+    checkage();
+    </script>
+</body>
+</html>
